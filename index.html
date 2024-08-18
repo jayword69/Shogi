@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>将棋 (Shōgi) - Ajedrez Japonés</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>将棋 (Shōgi)</h1>
+            <p>Ajedrez Japonés</p>
+        </header>
+        <div id="menu">
+            <button id="start">開始 (Iniciar)</button>
+            <button id="reset">リセット (Reiniciar)</button>
+        </div>
+        <div id="game-area">
+            <div id="board" class="hidden"></div>
+            <div id="captured-pieces">
+                <div id="player1-captured" class="captured"></div>
+                <div id="player2-captured" class="captured"></div>
+            </div>
+        </div>
+        <div id="turn-indicator">
+            <p>Turno: <span id="current-player">Jugador 1</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
